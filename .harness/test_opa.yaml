@@ -1,7 +1,7 @@
 pipeline:
-  name: mn
-  identifier: mn
-  projectIdentifier: shalinitest
+  name: test_opa
+  identifier: test_opa
+  projectIdentifier: test
   orgIdentifier: default
   tags: {}
   stages:
@@ -15,8 +15,9 @@ pipeline:
             steps:
               - step:
                   type: Wait
-                  name: w
-                  identifier: w
+                  name: Wait_1
+                  identifier: Wait_1
                   spec:
                     duration: 10m
         tags: {}
+  description: desc

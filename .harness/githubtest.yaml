@@ -1,0 +1,27 @@
+pipeline:
+  name: githubtest
+  identifier: githubtest
+  projectIdentifier: naidusanity
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: cs
+        identifier: cs
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: Wait
+                  name: Wait_1
+                  identifier: Wait_1
+                  spec:
+                    duration: <+input>
+        tags: {}
+        variables:
+          - name: timeout
+            type: String
+            description: ""
+            value: <+input>

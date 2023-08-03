@@ -1,0 +1,24 @@
+inputSet:
+  name: testinput
+  tags: {}
+  identifier: testinput
+  orgIdentifier: default
+  projectIdentifier: naidusanity
+  pipeline:
+    identifier: githubtest
+    stages:
+      - stage:
+          identifier: cs1
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: Wait_1
+                    type: Wait
+                    spec:
+                      duration: 10m
+          variables:
+            - name: timeout
+              type: String
+              value: 10m

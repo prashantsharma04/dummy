@@ -1,7 +1,7 @@
 pipeline:
-  name: test76
-  identifier: test76
-  projectIdentifier: shalinitest
+  name: testReconcile
+  identifier: testReconcile
+  projectIdentifier: naidusanity
   orgIdentifier: default
   tags: {}
   stages:
@@ -15,8 +15,8 @@ pipeline:
             steps:
               - step:
                   type: Wait
-                  name: wait
-                  identifier: wait
+                  name: Wait_1
+                  identifier: Wait_1
                   spec:
                     duration: 10m
         tags: {}

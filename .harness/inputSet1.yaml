@@ -1,0 +1,20 @@
+inputSet:
+  name: is1
+  tags: {}
+  identifier: is1
+  orgIdentifier: default
+  projectIdentifier: naidusanity
+  pipeline:
+    identifier: githubtest
+    stages:
+      - stage:
+          identifier: cs1
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: Wait_1
+                    type: Wait
+                    spec:
+                      duration: 20s
